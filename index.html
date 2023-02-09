@@ -38,7 +38,7 @@
     </style>
   </head>
   <body>
-    <h1 id="hacker-text">KALI Linux Downloader by LUGVITC</h1>
+    <h1 id="hacker-text">Operating System Detector and Downloader</h1>
     <div id="os-detect">
       <p id="os-text"></p>
       <div id="download-button-container"></div>
@@ -55,6 +55,9 @@
       } else if (os.indexOf("Mac") !== -1) {
         osDisplay.innerHTML = "Detected Operating System: MacOS";
         downloadLink = "https://example.com/downloads/mac-file.dmg";
+      } else if (os.indexOf("Linux") !== -1) {
+        osDisplay.innerHTML = "Detected Operating System: Linux";
+        downloadLink = "https://example.com/downloads/linux-file.deb";
       } else {
         osDisplay.innerHTML = "Sorry, your operating system is not supported.";
         downloadLink = "";
