@@ -51,13 +51,13 @@
       
       if (os.indexOf("Win") !== -1) {
         osDisplay.innerHTML = "Detected Operating System: Windows";
-        downloadLink = "https://example.com/downloads/windows-file.exe";
+        downloadLink = "./WIN/win.zip";
       } else if (os.indexOf("Mac") !== -1) {
         osDisplay.innerHTML = "Detected Operating System: MacOS";
-        downloadLink = "https://example.com/downloads/mac-file.dmg";
+        downloadLink = "./MAC/mac.zip";
       } else if (os.indexOf("Linux") !== -1) {
         osDisplay.innerHTML = "Detected Operating System: Linux";
-        downloadLink = "https://example.com/downloads/linux-file.deb";
+        downloadLink = "./LINUX/linux.zip";
       } else {
         osDisplay.innerHTML = "Sorry, your operating system is not supported.";
         downloadLink = "";
